@@ -3,3 +3,15 @@
 // expect(element).toHaveTextContent(/react/i)
 // learn more: https://github.com/testing-library/jest-dom
 import '@testing-library/jest-dom';
+import weatherServices from './services/weather.services';
+const mockGeolocation = {
+    getCurrentPosition: jest.fn(),
+    watchPosition: jest.fn()
+};
+
+global.navigator.geolocation = mockGeolocation;
+
+// weather service 
+weatherServices.oneCall = () => {
+    return { data: null }
+}

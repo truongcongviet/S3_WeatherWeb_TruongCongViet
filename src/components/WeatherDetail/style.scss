@@ -1,0 +1,50 @@
+.weatherDetail {
+    height: 45vh;
+    .cloudyInfo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 65%;
+        .weatherData {
+            width: 250px;
+        }
+        .cloud-icon {
+            font-size: 75px;
+        }
+    }
+    .rainingInfo {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        height: 35%;
+        li {
+            width: 25%;
+            list-style: none;
+            border-width: 1px;
+            border-style: solid;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border-image: linear-gradient(to top, white, rgba(0, 0, 0, 0)) 1 100%;
+            div{
+                font-size: 28px;
+            }
+            .feel_like{
+                margin: auto;
+                padding: 5px 5px;
+                background-color: var(--success);
+                border-radius: 5px;
+                text-align: center;
+            }
+            .dengue {
+                width:45px;
+                height: 45px;
+                background-color: var(--lightcyan);
+                border: 2px solid var(--white);
+                border-radius: 50%;
+                margin: auto;
+            }
+        }
+        
+    }
+}

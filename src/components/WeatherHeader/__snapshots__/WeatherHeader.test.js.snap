@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`weatherHeader Component expect to render WeatherHeader component 1`] = `
+<WeatherProvider>
+  <WeatherHeader>
+    <div
+      className="weatherHeader"
+      role="header"
+    >
+      <div
+        className="menu-icon"
+      >
+        <i
+          className="bi bi-list h1"
+        />
+      </div>
+      <div
+        className="get-location"
+      >
+        <div>
+          myENV
+        </div>
+        <select
+          className="custom-select-cities"
+          onClick={[Function]}
+        >
+          <option
+            className="city"
+            key="0"
+            value={0}
+          >
+            Hồ Chí Minh
+          </option>
+          <option
+            className="city"
+            key="1"
+            value={1}
+          >
+            Singapore
+          </option>
+          <option
+            className="city"
+            key="2"
+            value={2}
+          >
+            Jerusalem
+          </option>
+          <option
+            className="city"
+            key="3"
+            value={3}
+          >
+            California
+          </option>
+          <option
+            className="city"
+            key="4"
+            value={4}
+          >
+            AlasKa
+          </option>
+        </select>
+      </div>
+      <div
+        className="bell-icon"
+      >
+        <i
+          className="bi bi-bell-fill h2"
+        />
+      </div>
+    </div>
+  </WeatherHeader>
+   
+</WeatherProvider>
+`;
