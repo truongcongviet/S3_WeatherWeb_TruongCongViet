@@ -7,21 +7,10 @@
 
   .noteText {
     font-size: 20px;
-    color: var(--orange);
     padding: 5px;
     position: fixed;
     width: 100%;
     z-index: 1;
-    .tide-text {
-      color: var(--primary);
-    }
-    .dot {
-      color: var(--black);
-    }
-    .date {
-      color: var(--black);
-      text-align: center;
-      margin-top: 5px;
-    }
+  
   }
 }

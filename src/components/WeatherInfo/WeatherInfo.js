@@ -5,6 +5,7 @@ import weatherServices from "../../services/weather.services";
 import { GET_DATA_WEATHER } from "../../context/constant/actionGetDataWeather";
 import { useAppContext } from "../../context/CreateContext";
 import { useEffect, useState } from "react";
+
 const WeatherInfo = () => {
   const dispatch = useAppContext()[1]
   useEffect(() => {
@@ -16,7 +17,7 @@ const WeatherInfo = () => {
     navigator.geolocation.getCurrentPosition((position) => {
       getData({
         lat: position.coords.latitude,
-        lon: position.coords.longitude, 
+        lon: position.coords.longitude,
       })
     }, error => {
       alert('Cannot get current location')

@@ -87,7 +87,6 @@ export const initialState = {
 }
 
 export const weatherReducer = (state, action = {}) => {
-    console.log('state và action', state, action);
     switch (action.type) {
         case GET_DATA_WEATHER:
 

@@ -4,7 +4,6 @@ import './style.scss';
 
 export const CustomizeActiveIcon = (props) => {
   const { cx, cy, payload } = props;
-  console.log('payload', payload);
   if (payload.hours >= 6 && payload.hours <= 18) {
     return <SunIcon cx={cx} cy={cy} />;
   }

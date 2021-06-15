@@ -3,9 +3,8 @@ import { useAppContext } from "../../context/CreateContext";
 import "./style.scss";
 const WeatherDetail = () => {
     const [{ weather }] = useAppContext();
-    console.log('dataweather', weather);
     return (
-        <div className="weatherDetail">
+        <div className="detail-weather">
             <div className="cloudyInfo">
                 <div className="cloud-icon p-2 mb-4">
                     {weather ?

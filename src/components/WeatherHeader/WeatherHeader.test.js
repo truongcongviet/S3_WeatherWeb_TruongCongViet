@@ -7,9 +7,6 @@ import toJson from 'enzyme-to-json';
 import { useAppContext, WeatherProvider } from '../../context/CreateContext'
 import Adapter from 'enzyme-adapter-react-16';
 
-
-
-
 configure({ adapter: new Adapter() });
 
 const wrapper = mount(<WeatherProvider><WeatherHeader /> </WeatherProvider>);

@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WeatherHeader Component expect to render WeatherHeader component 1`] = `
+<WeatherProvider>
+  <WeatherDetail>
+    <div
+      className="detail-weather"
+    >
+      <div
+        className="cloudyInfo"
+      >
+        <div
+          className="cloud-icon p-2 mb-4"
+        >
+          <i
+            className="bi bi-cloud-minus"
+          />
+        </div>
+        <div
+          className="weatherData p-2"
+        >
+          <div
+            className="h2"
+          />
+          <div
+            className="d-flex h4 justify-content-between"
+          >
+            <div
+              className=""
+            >
+              <i
+                className="bi bi-thermometer-half"
+              />
+               
+               °C
+            </div>
+            <div>
+              <i
+                className="bi bi-droplet"
+              />
+               
+               %
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul
+        className="rainingInfo p-0"
+      >
+        <li>
+          <h5>
+            PSI
+          </h5>
+          <div
+            className="feel_like"
+          />
+          <p>
+            good
+          </p>
+        </li>
+        <li>
+          <h5>
+            RAIN
+          </h5>
+          <div>
+            0
+          </div>
+          <p>
+            mm
+          </p>
+        </li>
+        <li>
+          <h5>
+            DENGUE
+          </h5>
+          <div
+            className="dengue"
+          />
+        </li>
+        <li>
+          <i
+            className="bi bi-plus-circle h1 text-dark"
+          />
+          <p
+            className="text-dark font-weight-bold h4"
+          >
+            add
+          </p>
+        </li>
+      </ul>
+    </div>
+  </WeatherDetail>
+   
+</WeatherProvider>
+`;

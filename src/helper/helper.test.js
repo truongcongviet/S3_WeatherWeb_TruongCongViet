@@ -8,6 +8,7 @@ import {formatTime} from './functional';
 
 configure({ adapter: new Adapter() });
 
+//test Icon weatherChart
 describe("custom Icon in WeatherChart", () => {
     test('renders SunIcon', () => {
         const wrapper = mount(<CustomizeActiveIcon payload={{hours:15}} />);
@@ -21,6 +22,8 @@ describe("custom Icon in WeatherChart", () => {
         expect(idMoon.length).toBe(1);
     });
 })
+
+//test markers weatherChart
 describe("custom markers in WeatherChart", () => {
     test('renders marker', () => {
         const wrapper = mount(<CustomizedMarker payload={[]} active={false} />);
@@ -38,6 +41,8 @@ describe("custom markers in WeatherChart", () => {
         expect(marker.length).toBe(1);
     });
 })
+
+//test function formatTime
 describe ("custom hours functional", () => {
     test ('render hourformat', ()=> {
         const formathours = formatTime(new Date(1618315200));

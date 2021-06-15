@@ -13,9 +13,9 @@ const WeatherChart = () => {
 
       <div className="noteText" data-testid="showInfo">
         <span className="tide-text">Tide</span>
-        <span className="dot">•</span>
-        <span>Sunrise and Sunset</span>
-        <div className="date">{data.weather && data.weather.date}</div>
+        <span className="text-secondary"> • </span>
+        <span className="text-warning">Sunrise and Sunset</span>
+        <div className="text-center text-muted">{data.weather && data.weather.date}</div>
       </div>
       <ResponsiveContainer width={2500} height='100%'>
         {data.virtualData ? (

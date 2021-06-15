@@ -6,7 +6,6 @@ import { GET_DATA_WEATHER } from "../../context/constant/actionGetDataWeather";
 import { useState } from 'react';
 
 const WeatherHeader = () => {
-    console.log('props', useAppContext());
     const [{cities }] = useAppContext();
     const dispatch = useAppContext()[1];
     const [dataCity, setDataCity] = useState(cities)

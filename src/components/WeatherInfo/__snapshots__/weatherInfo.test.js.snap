@@ -70,7 +70,7 @@ Object {
           </div>
         </div>
         <div
-          class="weatherDetail"
+          class="detail-weather"
         >
           <div
             class="cloudyInfo"
@@ -224,7 +224,7 @@ Object {
         </div>
       </div>
       <div
-        class="weatherDetail"
+        class="detail-weather"
       >
         <div
           class="cloudyInfo"

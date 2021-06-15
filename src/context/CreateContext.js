@@ -1,6 +1,5 @@
-import { createContext, useCallback, useContext, useReducer } from 'react';
+import { createContext, useCallback, useContext, useReducer, Fragment } from 'react';
 import { weatherReducer, initialState } from './reducers/weatherReducer'
-import { Fragment } from 'react';
 const CreateContext = createContext({});
 
 export const useAppContext = () => {

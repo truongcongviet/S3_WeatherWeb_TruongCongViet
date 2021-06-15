@@ -9,14 +9,10 @@ export const api = create({
 })
 
 export const handleResponse = (response) => {
-
-    console.log('reponse',  response);
-    if (response.ok || response.status === 200) {
-        return response;
+        console.log('response', response)
+        if (response.status === 200) {
+        return Promise.resolve(response);
     } else {
-        if (response.status === 404) {
-            return Promise.reject(response.status);
-        }
         const error = response.problem;
         return Promise.reject(error);
     }

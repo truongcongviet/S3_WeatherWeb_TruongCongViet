@@ -14,7 +14,6 @@ describe('return state Data to WeatherChart', () => {
         };
         const defaultState = initialState;
         const result = weatherReducer(defaultState, action);
-        console.log('awefaefaef', result.weather)
         expect(result.weather).toBe(action.data);
         expect(result.weather.date != undefined).toBe(true);
         expect(result.virtualData[0].time != undefined).toBe(true);

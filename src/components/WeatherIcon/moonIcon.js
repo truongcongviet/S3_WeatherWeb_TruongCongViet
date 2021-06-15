@@ -2,14 +2,12 @@
 import React from "react";
 
 const MoonIcon = ({ cx, cy }) => {
-    console.log('cx, cy', cx, cy);
     if (cx < 10) {
         cx += 15;
     }
     if (cx > 2450) {
         cx -= 15;
     }
-    console.log('cx, cy edited', cx, cy);
 
     return (
         
