@@ -13,8 +13,9 @@ export const CustomizeActiveIcon = (props) => {
 };
 
 export const CustomizedMarker = ({ active, payload }) => {
+  console.log('active', active, payload);
+
   if (!active || !payload.length) return null;
-  
   return (
     <div className="customizedMarker">
       <p className="marker"><span>Hours :</span>{`${payload[1]?.payload?.hour}`}</p>

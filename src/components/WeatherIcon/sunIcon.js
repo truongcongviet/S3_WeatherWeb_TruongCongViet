@@ -2,7 +2,7 @@ import React from "react";
 
 const SunIcon = ({ cx, cy }) => {
   return (
-    <svg x={cx - 17} y={cy - 15} width="32" height="30" version="1.1" data-testId="sun" viewBox="0 0 512 512">
+    <svg x={cx - 17} y={cy - 15} width="32" height="30" version="1.1" data-testid="sun" viewBox="0 0 512 512">
       <g>
         <circle fill="#FFBE31" cx="255.997" cy="255.997" r="144.824"></circle>
         <path fill="#FFBE31" d="M256,56.849c-4.273,0-7.737-3.463-7.737-7.737V7.737C248.263,3.463,251.727,0,256,0s7.737,3.463,7.737,7.737v41.376C263.737,53.386,260.273,56.849,256,56.849z"></path>

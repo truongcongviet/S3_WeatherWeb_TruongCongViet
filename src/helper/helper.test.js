@@ -12,13 +12,13 @@ configure({ adapter: new Adapter() });
 describe("custom Icon in WeatherChart", () => {
     test('renders SunIcon', () => {
         const wrapper = mount(<CustomizeActiveIcon payload={{hours:15}} />);
-        const idSun = wrapper.find("[data-testId='sun']");
+        const idSun = wrapper.find("[data-testid='sun']");
         expect(idSun.length).toBe(1);
 
     });
     test('renders SunIcon', () => {
         const wrapper = mount(<CustomizeActiveIcon payload={{hours:1}} />);
-        const idMoon = wrapper.find("[data-testId='moon']");
+        const idMoon = wrapper.find("[data-testid='moon']");
         expect(idMoon.length).toBe(1);
     });
 })

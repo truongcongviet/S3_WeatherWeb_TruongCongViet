@@ -11,7 +11,7 @@ const MoonIcon = ({ cx, cy }) => {
 
     return (
         
-        <svg width="30px" height='30px' data-testId='moon' xmlns="http://www.w3.org/2000/svg" version="1.1" x={cx - 15} y={cy - 50} viewBox="0 0 1000 1000" enableBackground="new 0 0 1000 1000">
+        <svg width="30px" height='30px' data-testid='moon' xmlns="http://www.w3.org/2000/svg" version="1.1" x={cx - 15} y={cy - 50} viewBox="0 0 1000 1000" enableBackground="new 0 0 1000 1000">
             <g>
                 <g>
                     <g>
