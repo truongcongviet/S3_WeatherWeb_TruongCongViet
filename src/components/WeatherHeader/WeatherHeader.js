@@ -1,5 +1,4 @@
 import './style.scss';
-import { Form, Select } from 'react-bootstrap';
 import { useAppContext } from '../../context/CreateContext';
 import weatherServices from '../../services/weather.services';
 import { GET_DATA_WEATHER } from "../../context/constant/actionGetDataWeather";

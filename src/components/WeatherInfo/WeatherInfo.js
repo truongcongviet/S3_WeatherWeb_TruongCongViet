@@ -4,7 +4,7 @@ import "./style.scss";
 import weatherServices from "../../services/weather.services";
 import { GET_DATA_WEATHER } from "../../context/constant/actionGetDataWeather";
 import { useAppContext } from "../../context/CreateContext";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 const WeatherInfo = () => {
   const dispatch = useAppContext()[1]

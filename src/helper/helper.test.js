@@ -1,7 +1,6 @@
 import  {CustomizeActiveIcon, CustomizedMarker} from './customizedChart';
 import React from 'react';
 import {mount, configure} from 'enzyme';
-import SunIcon from '../components/WeatherIcon/sunIcon';
 import Adapter from 'enzyme-adapter-react-16';
 import {formatTime} from './functional';
 
@@ -36,7 +35,7 @@ describe("custom markers in WeatherChart", () => {
         expect(marker.length).toBe(0);
     });
     test('renders marker', () => {
-        const wrapper = mount(<CustomizedMarker payload={[{value: 1.8, hours: "03:00 PM"}]} active={true} />);
+        const wrapper = mount(<CustomizedMarker payload={[{payload:{hour: "09:00 PM", temp:28.36, tide:2}}]} active={true} />);
         const marker = wrapper.find(".customizedMarker");
         expect(marker.length).toBe(1);
     });

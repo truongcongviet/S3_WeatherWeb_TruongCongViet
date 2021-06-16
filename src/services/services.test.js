@@ -1,8 +1,6 @@
-import React from 'react';
 import { handleResponse } from './getApi';
 import axios from "axios";
 import { oneCall } from './weather.services';
-import create from 'apisauce';
 import { fakeData } from './fakeData';
 import { initialState } from '../context/reducers/weatherReducer';
 

@@ -14,7 +14,7 @@ export const initialState = {
             lat: 1.3521,
             lon: 103.8198
         },
-        
+
         {
             nameCity: "Jerusalem",
             lat: 31.7683,
@@ -89,7 +89,7 @@ export const initialState = {
 export const weatherReducer = (state, action = {}) => {
     switch (action.type) {
         case GET_DATA_WEATHER:
-
+            console.log('action ', action);
             let virtualDataTemp = state.virtualData
             action.data.hourly.map((item, index) => {
                 let virtualDataItem = { ...virtualDataTemp[index], ...item };
@@ -97,13 +97,19 @@ export const weatherReducer = (state, action = {}) => {
                 virtualDataItem.time = new Date(item.dt * 1000);
                 virtualDataItem.hour = formatTime(virtualDataItem.time);
                 virtualDataItem.hours = virtualDataItem.time.getHours();
+
+                if (virtualDataItem.hours >= 6 && virtualDataItem.hours <= 18) {
+                    virtualDataItem.tempFake = virtualDataItem.temp
+                } else {
+                    virtualDataItem.tempFake = 0
+                }
                 virtualDataTemp[index] = virtualDataItem;
             });
-            
+
             //format date
-            action.data.date = new Date(action.data.current.dt * 1000);
-            action.data.date = action.data.date.toString();
-            action.data.date = action.data.date.slice(0, action.data.date.length - 35);
+            action.data.date1 = new Date(action.data.current.dt * 1000);
+            action.data.date1 = action.data.date1.toString();
+            action.data.date1 = action.data.date1.slice(0, action.data.date1.length - 35);
 
             return {
                 ...state,

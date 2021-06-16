@@ -1,6 +1,5 @@
 import React from 'react';
 import WeatherChart from './WeatherChart';
-import {render, screen, cleanup} from '@testing-library/react';
 import { mount, configure  } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import { WeatherProvider } from '../../context/CreateContext'

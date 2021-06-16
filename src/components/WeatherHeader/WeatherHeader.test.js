@@ -1,6 +1,5 @@
 import React from 'react';
 import WeatherHeader from './WeatherHeader';
-import { render, screen, cleanup } from '@testing-library/react';
 import { mount, configure, shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 

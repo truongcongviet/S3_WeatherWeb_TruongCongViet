@@ -1,6 +1,6 @@
 import React from 'react';
 import WeatherDetail from './WeatherDetail';
-import { mount, configure, shallow } from 'enzyme';
+import { mount, configure } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import { WeatherProvider } from '../../context/CreateContext'
 import Adapter from 'enzyme-adapter-react-16';
