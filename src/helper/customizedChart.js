@@ -13,7 +13,6 @@ export const CustomizeActiveIcon = (props) => {
 };
 
 export const CustomizedMarker = ({ active, payload }) => {
-  console.log('payload', payload);
   if (!active || !payload.length) return null;
   return (
     <div className="customizedMarker">

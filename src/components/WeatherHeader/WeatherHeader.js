@@ -2,17 +2,15 @@ import './style.scss';
 import { useAppContext } from '../../context/CreateContext';
 import weatherServices from '../../services/weather.services';
 import { GET_DATA_WEATHER } from "../../context/constant/actionGetDataWeather";
-import { useState } from 'react';
 
 const WeatherHeader = () => {
-    const [{cities }] = useAppContext();
+    const [{ cities }] = useAppContext();
     const dispatch = useAppContext()[1];
-    const [dataCity, setDataCity] = useState(cities)
 
     //get data weather from select city 
     const handleChangeCity = (e) => {
         let idCity = parseInt(e.target.value);
-        weatherServices.oneCall({ lat: dataCity[idCity].lat, lon: dataCity[idCity].lon }).then(res => {
+        weatherServices.oneCall({ lat: cities[idCity].lat, lon: cities[idCity].lon }).then(res => {
             dispatch({ type: GET_DATA_WEATHER, data: res.data });
         });
     }

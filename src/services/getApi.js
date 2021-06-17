@@ -9,7 +9,6 @@ export const api = create({
 })
 
 export const handleResponse = (response) => {
-        console.log('response', response)
         if (response.status === 200) {
         return Promise.resolve(response);
     } else {

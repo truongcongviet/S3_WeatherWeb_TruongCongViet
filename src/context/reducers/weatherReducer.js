@@ -89,7 +89,6 @@ export const initialState = {
 export const weatherReducer = (state, action = {}) => {
     switch (action.type) {
         case GET_DATA_WEATHER:
-            console.log('action ', action);
             let virtualDataTemp = state.virtualData
             action.data.hourly.map((item, index) => {
                 let virtualDataItem = { ...virtualDataTemp[index], ...item };
